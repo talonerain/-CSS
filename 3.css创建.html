@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            css创建
+        </title>
+        <!--外部样式表-->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <!--内部样式表-->
+        <style>
+            hr
+            {
+                color: sienna;
+            }
+            p
+            {
+                margin-left: 20px;
+            }
+            body
+            {
+                background-image: url("images/back40.gif");
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>
+            1.外部样式表：当样式需要应用于很多页面时，外部样式表是理想的选择，在使用外部样式的情况下，你可以通过
+            改变一个文件来改变整个站点的外观。每个页面使用&lt;link&gt;标签链接到样式表。&lt;link&gt;
+            标签在头部。外部样式表可以在任何文本编辑器中编辑，并且不能包含任何的html标签，以.css为扩展名。
+        </p>
+        <p>
+            2.内部样式表：当单个文档需要特殊的样式时，使用内部样式表，可以使用&lt;style&gt;标签定义。
+        </p>
+        <p>
+            3.内联样式：将样式和内容混在一起：
+        </p>
+        <p style="color:sienna;margin-left:20px">内联样式</p>
+        <p>样式优先级：内联样式 > 内部样式 > 外部样式</p>
+    </body>
+</html>
