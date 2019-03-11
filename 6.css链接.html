@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css链接</title>
+    </head>
+    <body>
+        <style>
+            a:link
+            {
+                color: #000000;
+                text-decoration: underline;
+            }
+            a:visited
+            {
+                color: #00FF00;
+            }
+            a:hover
+            {
+                color: #FF00FF;
+            }
+            a:active
+            {
+                color: #0000FF;
+            }
+        </style>
+
+        <p>
+            a:link-正常，未访问过的链接
+            <br>
+            a:visited-已访问过的链接
+            <br>
+            a:hover-鼠标移动到链接上
+            <br>
+            a:active-鼠标点击时
+        </p>
+        <p>
+            <a href="/css/" target="_blank">这是一个链接</a>
+        </p>
+        <p>
+            <b>注意：</b>hover必须在a:link和a:visited之后定义才有效。
+            <br>
+            <b>注意：</b>active必须在hover之后定义才有效。
+        </p>
+    </body>
+</html>
